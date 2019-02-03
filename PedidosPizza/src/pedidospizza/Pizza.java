@@ -40,7 +40,7 @@ public class Pizza {
     public void setEstado(String estado) {
         this.estado = estado;
     }
-        
+       //El estado predefinido es pedida y se le suma un contador para llevar la cuenta de las pizzas que han sido pedidas 
     public Pizza(String tipo, String tamaño) {
         this.tipo = tipo;
         this.tamaño = tamaño;
@@ -55,7 +55,7 @@ public class Pizza {
     public static int getTotalServidas() {
         return Pizza.totalServidas;
     }
-
+//Metodo para declarar un pizza servida y si una pizza ya ha sido servida que te muestre que ya ha sido servida
     public void Sirve() {
 
         if (this.estado.equals("pedida")) {
